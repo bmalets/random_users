@@ -6,7 +6,6 @@ require 'json'
 require 'pp'
 
 module RandomUsers
-  # Your code goes here...
   def self.generate number=1
     users, service = [], RandomUserService.new
     number.times{ users << service.get_user }
@@ -22,5 +21,4 @@ module RandomUsers
       JSON.parse( Net::HTTP.get( @url ) )    
     end  
   end
-
 end
