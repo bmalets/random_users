@@ -20,11 +20,29 @@ Or install it yourself as:
 
 ## Usage
 
-	RandomUsers.generate( number )	# => { array of hashes with user data }
+Generate user:
 
- 	RandomUsers.generate			# => { hash with user data } 
- 
-	RandomUsers.generate( 5 )		# => { array with 5 hashes with user data }
+	RandomUsers.generate	    # => generate hash with random user data
+
+	RandomUsers.generate_men	# => generate hash with random male user data
+
+	RandomUsers.generate_women	# => generate hash with random female user data
+
+Generate users:
+
+	RandomUsers.generate( number )	    	# => generate hash with random user data
+
+	RandomUsers.generate_men( number )		# => generate hash with random male user data
+
+	RandomUsers.generate_women( number )	# => generate hash with random female user data
+
+
+Number must be a integer value from 1 to 20.
+You can't generate more then 20 users in one time.
+For example, if you want 24 users, you need to run: 
+
+        RandomUsers.generate( 20 ) + RandomUsers.generate( 4 )
+
 	
 ## Example of generated user data:
 
