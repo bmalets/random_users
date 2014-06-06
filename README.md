@@ -20,17 +20,51 @@ Or install it yourself as:
 
 ## Usage
 
-To generate one user:
+	RandomUsers.generate( number )	# => { array of hashes with user data }
 
- 	RandomUsers.generate
+ 	RandomUsers.generate			# => { hash with user data } 
  
- 	=> {"results"=>[{"user"=>{"gender"=>"female", "name"=>{"title"=>"ms", "first"=>"louella", "last"=>"morris"}, "location"=>{"street"=>"7783 pine rd", "city"=>"roanoke", "state"=>"south dakota", "zip"=>"76909"}, "email"=>"louella.morris20@example.com", "username"=>"greenbear646", "password"=>"mellon", "salt"=>"wKnuvcZv", "md5"=>"46d9e5eb6b9c468675a87768f0ab23c2", "sha1"=>"99e1f77ce4037d9f0232959eea3d96d17e5644b5", "sha256"=>"13e3c57e28e408d31e4c5bf32386581ca6b451df5326aa20b03d3b87e4c3ce57", "registered"=>"923903753", "dob"=>"407694440", "phone"=>"(320)-516-6558", "cell"=>"(862)-119-2350", "SSN"=>"608-66-1189", "picture"=>"http://api.randomuser.me/portraits/women/82.jpg"}, "seed"=>"358fda53f008159", "version"=>"0.4"}]} 
+	RandomUsers.generate( 5 )		# => { array with 5 hashes with user data }
+	
+## Example of generated user data:
 
-To generate many users (e.g. 2):
-
-	RandomUsers.generate 2
- 
- 	=> [{"results"=>[{"user"=>{"gender"=>"female", "name"=>{"title"=>"mrs", "first"=>"sherry", "last"=>"ray"}, "location"=>{"street"=>"8063 thornridge cir", "city"=>"cincinnati", "state"=>"alabama", "zip"=>"59964"}, "email"=>"sherry.ray42@example.com", "username"=>"whiteelephant306", "password"=>"carmex2", "salt"=>"4nGpr8SW", "md5"=>"54d0985920ba8c58a4662a2f21dae024", "sha1"=>"c4b391b4a7bfb9e3d2393eb021cdf6c4e2096aca", "sha256"=>"e0fb0abe8a97d0a9f2936a04e1eba952e3d520de51441cfe631b37abbaae7a77", "registered"=>"1208187789", "dob"=>"181435502", "phone"=>"(865)-345-2823", "cell"=>"(239)-397-8955", "SSN"=>"505-20-7857", "picture"=>"http://api.randomuser.me/portraits/women/87.jpg"}, "seed"=>"c727c73c2466321", "version"=>"0.4"}]}, {"results"=>[{"user"=>{"gender"=>"female", "name"=>{"title"=>"mrs", "first"=>"lillie", "last"=>"willis"}, "location"=>{"street"=>"2372 texas ave", "city"=>"bozeman", "state"=>"ohio", "zip"=>"78702"}, "email"=>"lillie.willis16@example.com", "username"=>"purplebear679", "password"=>"toriamos", "salt"=>"SyLMMxdU", "md5"=>"565f3e4b4ad09adf3224352d2052ead3", "sha1"=>"4640b25d4a8f64bf64e27bc0cb0fe745a333c65a", "sha256"=>"ac47c23398db53ccee51de0f800ba5b09e1feb8e24f351db0caf75e0e73eac3c", "registered"=>"1012611471", "dob"=>"345557577", "phone"=>"(153)-756-3049", "cell"=>"(946)-686-8893", "SSN"=>"423-84-4235", "picture"=>"http://api.randomuser.me/portraits/women/16.jpg"}, "seed"=>"add794adc70534f", "version"=>"0.4"}]}] 
+	{
+	
+	    "results":[
+	        {
+	            "user":{
+	                "gender":"male",
+	                "name":{
+	                    "title":"mr",
+	                    "first":"harvey",
+	                    "last":"steward"
+	                },
+	                "location":{
+	                    "street":"4956 fifth st",
+	                    "city":"indianapolis",
+	                    "state":"west virginia",
+	                    "zip":"23684"
+	                },
+	                "email":"harvey.steward34@example.com",
+	                "username":"whitegoose996",
+	                "password":"flanker",
+	                "salt":"YxYxDkym",
+	                "md5":"3ae2f676f0af99fc4e369ffca60ef834",
+	                "sha1":"e077746c2e2f8dd7a6d3d3f6e1220ed2674e58f5",
+	                "sha256":"f7f80c8588147f5504549bc8330cd52c9fcded3202d29f2ad8cd4324035d4c15",
+	                "registered":"1196094856",
+	                "dob":"305341965",
+	                "phone":"(569)-482-6175",
+	                "cell":"(135)-829-9127",
+	                "SSN":"504-27-7675",
+	                "picture":"http://api.randomuser.me/portraits/men/40.jpg"
+	            },
+	            "seed":"b55af278546e93e",
+	            "version":"0.4"
+	        }
+	    ]
+	
+	}
 
 ## Contributing
 
