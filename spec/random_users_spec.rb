@@ -45,7 +45,7 @@ describe "Random Users Generation Tests" do
     end
   end
 
-  10.times do |number|
+  5.times do |number|
 
     it "Generate 1 random user test" do
       check_user( RandomUsers.generate )
