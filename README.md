@@ -47,41 +47,31 @@ For example, if you want 24 users, you need to run:
 ## Example of generated user data:
 
 	{
-	
-	    "results":[
-	        {
-	            "user":{
-	                "gender":"male",
-	                "name":{
-	                    "title":"mr",
-	                    "first":"harvey",
-	                    "last":"steward"
-	                },
-	                "location":{
-	                    "street":"4956 fifth st",
-	                    "city":"indianapolis",
-	                    "state":"west virginia",
-	                    "zip":"23684"
-	                },
-	                "email":"harvey.steward34@example.com",
-	                "username":"whitegoose996",
-	                "password":"flanker",
-	                "salt":"YxYxDkym",
-	                "md5":"3ae2f676f0af99fc4e369ffca60ef834",
-	                "sha1":"e077746c2e2f8dd7a6d3d3f6e1220ed2674e58f5",
-	                "sha256":"f7f80c8588147f5504549bc8330cd52c9fcded3202d29f2ad8cd4324035d4c15",
-	                "registered":"1196094856",
-	                "dob":"305341965",
-	                "phone":"(569)-482-6175",
-	                "cell":"(135)-829-9127",
-	                "SSN":"504-27-7675",
-	                "picture":"http://api.randomuser.me/portraits/men/40.jpg"
-	            },
-	            "seed":"b55af278546e93e",
-	            "version":"0.4"
-	        }
-	    ]
-	
+	        "gender":"male",
+	        "name":{
+	            "title":"mr",
+	            "first":"harvey",
+	            "last":"steward"
+	        },
+	        "location":{
+	            "street":"4956 fifth st",
+	            "city":"indianapolis",
+	            "state":"west virginia",
+	            "zip":"23684"
+	        },
+	        "email":"harvey.steward34@example.com",
+	        "username":"whitegoose996",
+	        "password":"flanker",
+	        "salt":"YxYxDkym",
+	        "md5":"3ae2f676f0af99fc4e369ffca60ef834",
+	        "sha1":"e077746c2e2f8dd7a6d3d3f6e1220ed2674e58f5",
+	        "sha256":"f7f80c8588147f5504549bc8330cd52c9fcded3202d29f2ad8cd4324035d4c15",
+	        "registered":"1196094856",
+	        "dob":"305341965",
+	        "phone":"(569)-482-6175",
+	        "cell":"(135)-829-9127",
+	        "SSN":"504-27-7675",
+	        "picture":"http://api.randomuser.me/portraits/men/40.jpg"
 	}
 
 ## Contributing
