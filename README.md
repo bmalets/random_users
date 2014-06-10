@@ -35,14 +35,6 @@ Generate users:
 	RandomUsers.generate_men( number )		# => generate hash with random male user data
 
 	RandomUsers.generate_women( number )	# => generate hash with random female user data
-
-
-Number must be a integer value from 1 to 20.
-You can't generate more then 20 users in one time.
-For example, if you want 24 users, you need to run: 
-
-        RandomUsers.generate( 20 ) + RandomUsers.generate( 4 )
-
 	
 ## Example of generated user data:
 
