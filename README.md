@@ -30,11 +30,11 @@ Generate user:
 
 Generate users:
 
-	RandomUsers.generate( number )	    	# => generate hash with random user data
+	RandomUsers.generate( number )	    	# => generate array of hashes with random user data
 
-	RandomUsers.generate_men( number )		# => generate hash with random male user data
+	RandomUsers.generate_men( number )		# => generate array of hashes with random male user data
 
-	RandomUsers.generate_women( number )	# => generate hash with random female user data
+	RandomUsers.generate_women( number )	# => generate array of hashes with random female user data
 	
 ## Example of generated user data:
 
