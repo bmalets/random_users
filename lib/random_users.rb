@@ -8,24 +8,21 @@ require 'pp'
 module RandomUsers
 
   def self.generate number=1
-    users, service = [], RandomUserGenerator.new
-    number = 20 if number > 20
-    number.times{ users << service.get_user }
-    number == 1 ? users[0] : users 
+    get_user( RandomUserGenerator, number )
   end
 
   def self.generate_men number=1
-    users, service = [], RandomMenGenerator.new
-    number = 20 if number > 20
-    number.times{ users << service.get_user }
-    number == 1 ? users[0] : users 
+    get_user( RandomMenGenerator, number )
   end
 
   def self.generate_women number=1
-    users, service = [], RandomWomenGenerator.new
-    number = 20 if number > 20
-    number.times{ users << service.get_user }
-    number == 1 ? users[0] : users 
+    get_user( RandomWomenGenerator, number )
+  end
+
+  def self.get_user generator, number
+    users, service = [], generator.new
+    number.times{ users << service.get_user['results'].first['user'] }
+    number == 1 ? users[0] : users  
   end
 
   class RandomUserGenerator
