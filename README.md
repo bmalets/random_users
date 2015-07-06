@@ -1,4 +1,4 @@
-# RandomUsers
+# RandomUsers [![Gem Version](https://badge.fury.io/rb/random_users.svg)](http://badge.fury.io/rb/random_users)
 
   It's a gem for using http://randomuser.me/ service in ruby/rails apps.
 
