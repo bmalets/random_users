@@ -1,4 +1,4 @@
-# RandomUsers [![Gem Version](https://badge.fury.io/rb/random_users.svg)](http://badge.fury.io/rb/random_users)
+# RandomUsers [![Gem Version](https://badge.fury.io/rb/random_users.svg)](http://badge.fury.io/rb/random_users) [![Code Climate](https://codeclimate.com/github/bmalets/random_users/badges/gpa.svg)](https://codeclimate.com/github/bmalets/random_users)
 
   It's a gem for using http://randomuser.me/ service in ruby/rails apps.
 
