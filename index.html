@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Random_users : random user data generator for your ruby apps">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Random_users</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/bmalets/random_users">View on GitHub</a>
+
+          <h1 id="project_title">Random_users</h1>
+          <h2 id="project_tagline">random user data generator for your ruby apps</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/bmalets/random_users/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/bmalets/random_users/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p><a href="http://badge.fury.io/rb/random_users"><img src="https://badge.fury.io/rb/random_users.svg" alt="Gem Version"></a> <a href="https://codeclimate.com/github/bmalets/random_users"><img src="https://codeclimate.com/github/bmalets/random_users/badges/gpa.svg" alt="Code Climate"></a></p>
+
+<p>It's a gem for using <a href="http://randomuser.me/">http://randomuser.me/</a> service in ruby/rails apps.</p>
+
+<p>Using this gem you can easily generate random users for your app.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Add this line to your application's Gemfile:</p>
+
+<pre><code>gem 'random_users'
+</code></pre>
+
+<p>And then execute:</p>
+
+<pre><code>$ bundle
+</code></pre>
+
+<p>Or install it yourself as:</p>
+
+<pre><code>$ gem install random_users
+</code></pre>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Generate user:</p>
+
+<pre><code>RandomUsers.generate        # =&gt; generate hash with random user data
+
+RandomUsers.generate_men    # =&gt; generate hash with random male user data
+
+RandomUsers.generate_women  # =&gt; generate hash with random female user data
+</code></pre>
+
+<p>Generate users:</p>
+
+<pre><code>RandomUsers.generate( number )          # =&gt; generate array of hashes with random user data
+
+RandomUsers.generate_men( number )      # =&gt; generate array of hashes with random male user data
+
+RandomUsers.generate_women( number )    # =&gt; generate array of hashes with random female user data
+</code></pre>
+
+<h2>
+<a id="example-of-generated-user-data" class="anchor" href="#example-of-generated-user-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example of generated user data:</h2>
+
+<pre><code>{
+        "gender":"male",
+        "name":{
+            "title":"mr",
+            "first":"harvey",
+            "last":"steward"
+        },
+        "location":{
+            "street":"4956 fifth st",
+            "city":"indianapolis",
+            "state":"west virginia",
+            "zip":"23684"
+        },
+        "email":"harvey.steward34@example.com",
+        "username":"whitegoose996",
+        "password":"flanker",
+        "salt":"YxYxDkym",
+        "md5":"3ae2f676f0af99fc4e369ffca60ef834",
+        "sha1":"e077746c2e2f8dd7a6d3d3f6e1220ed2674e58f5",
+        "sha256":"f7f80c8588147f5504549bc8330cd52c9fcded3202d29f2ad8cd4324035d4c15",
+        "registered":"1196094856",
+        "dob":"305341965",
+        "phone":"(569)-482-6175",
+        "cell":"(135)-829-9127",
+        "SSN":"504-27-7675",
+        "picture":"http://api.randomuser.me/portraits/men/40.jpg"
+}
+</code></pre>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<ol>
+<li>Fork it ( <a href="http://github.com/bmalets/random_users/fork">http://github.com/bmalets/random_users/fork</a> )</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Random_users maintained by <a href="https://github.com/bmalets">bmalets</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
